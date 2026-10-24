@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Why Clean Data Beats a Bigger Model | Tabzzz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="html, css, javascript, jquery">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/vendor/animate.min.css">
+    <link rel="stylesheet" href="css/vendor/aos.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+    
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+  </head>
+  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+    <nav class="unslate_co--site-mobile-menu">
+      <div class="close-wrap d-flex">
+        <a href="#" class="d-flex ml-auto js-menu-toggle">
+          <span class="close-label">Close</span>
+          <div class="close-times">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+          </div>
+        </a>
+      </div>
+      <div class="site-mobile-inner"></div>
+    </nav>
+
+
+    <div class="unslate_co--site-wrap">
+
+      <div class="unslate_co--site-inner">
+
+        <div class="lines-wrap">
+          <div class="lines-inner">
+            <div class="lines"></div>
+          </div>
+        </div>
+        <!-- END lines -->
+      
+      <nav class="unslate_co--site-nav site-nav-target">
+
+        <div class="container">
+        
+          <div class="row align-items-center justify-content-between text-left">
+            <div class="col-md-5 text-right">
+              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                <li class="has-children">
+                  <a href="index.html#home-section" class="nav-link">Home</a>
+                  
+                </li>
+                <li><a href="index.html#portfolio-section" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#about-section" class="nav-link">About</a></li>
+                <li><a href="index.html#services-section" class="nav-link">Services</a></li>
+              </ul>
+            </div>
+            <div class="site-logo pos-absolute">
+              <a href="index.html" class="unslate_co--site-logo">Tabzzz</a>
+            </div>
+            <div class="col-md-5 text-right text-lg-left">
+              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                <li><a href="index.html#journal-section" class="nav-link">Journal</a></li>
+                <li><a href="index.html#contact-section" class="nav-link">Contact</a></li>
+              </ul>
+
+              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                <li><a href="#" class="js-menu-toggle">Menu</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </nav>
+      <!-- END nav -->
+
+      <div class="cover-v1 overlay" style="background-image: url('images/ai_post_5.jpg'); background-color:#000;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8 mx-auto text-center">
+              <h1 class="blog-heading" data-aos="fade-up" data-aos-delay="0">Why Clean Data Beats a Bigger Model</h1>
+              <div class="post-meta" data-aos="fade-up" data-aos-delay="100">By Tabish Syed &bullet; 2 mins read</div>
+            </div>
+          </div>
+        </div>
+        <a href="#blog-single-section" class="mouse-wrap smoothscroll">
+          <span class="mouse"><span class="scroll"></span></span>
+          <span class="mouse-label">Scroll</span>
+        </a>
+      </div>
+      <!-- END .cover-v1 -->
+
+      <div class="unslate_co--section" id="blog-single-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              <p>When a model performs badly, the first idea is often to use a bigger one. In practice the problem is more often the data. Better data usually improves results more than a bigger model does.</p>
+              <h3 class="mb-4 mt-5">What “dirty” data looks like</h3>
+              <p>Missing values, duplicate rows, typos like “Mumbai” and “Mumbay”, numbers in different units, and labels that don’t match the example. A model learns from all of it, mistakes included.</p>
+              <h3 class="mb-4 mt-5">Garbage in, garbage out</h3>
+              <p>A model finds patterns in whatever you give it. If a quarter of your labels are wrong, it will learn some wrong patterns and then repeat them confidently. A larger model can even memorize the errors, which makes the results look good in training and fail in real use.</p>
+              <h3 class="mb-4 mt-5">What to check first</h3>
+              <p>Look for duplicates and missing values. Make sure the same thing is written the same way everywhere. Read a random sample of your labels by hand. Check that the classes are balanced, so one category doesn’t make up almost the whole dataset.</p>
+              <h3 class="mb-4 mt-5">A common trap: data leakage</h3>
+              <p>If the same example shows up in both the training set and the test set, your accuracy score is too high. The model looks great on paper and then disappoints on new data. Split the data before you clean or transform it.</p>
+              <h3 class="mb-4 mt-5">Where to spend your time</h3>
+              <p>In the plant disease classifier I built, improving the images before training mattered. Steps like noise reduction and thresholding helped the model focus on the infected area of the leaf. Preparing the data this way is slower than picking a bigger network, but it pays off.</p>
+              <p>Before you scale up the model, scale up the quality of the data.</p>
+
+              <div class="pt-5 categories_tags">
+                <p>Categories: AI, Data Science &nbsp; Tags: #datacleaning, #datascience</p>
+                <p><a href="index.html#journal-section">&larr; Back to AI Journal</a></p>
+              </div>
+
+              <div class="post-single-navigation d-flex align-items-stretch">
+                <a href="journal-ml-vs-deep-learning.html" class="mr-auto w-50 pr-4">
+                  <span class="d-block">Previous Post</span>
+                  Machine Learning vs Deep Learning, Explained Simply
+                </a>
+                <a href="journal-chatbots.html" class="ml-auto w-50 text-right pl-4">
+                  <span class="d-block">Next Post</span>
+                  How Chatbots Understand What You Actually Mean
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="unslate_co--footer unslate_co--section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+    </div>
+
+    
+    <!-- Loader -->
+    <div id="unslate_co--overlayer"></div>
+    <div class="site-loader-wrap">
+      <div class="site-loader"></div>
+    </div>
+
+    <script src="js/scripts-dist.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
