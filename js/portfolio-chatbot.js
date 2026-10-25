@@ -37,6 +37,7 @@
 
   var messages = panel.querySelector('#portfolio-chat-messages');
   var input = panel.querySelector('#portfolio-chat-input');
+  var heroLauncher = document.getElementById('portfolio-chat-hero-open');
   var suggestions = [
     { label: 'Show me the projects', query: 'What projects has Tabish built?' },
     { label: 'What skills does he have?', query: 'What skills does Tabish have?' },
@@ -155,6 +156,7 @@
   }
 
   launcher.addEventListener('click', function () { panel.hidden ? openChat() : closeChat(); });
+  if (heroLauncher) heroLauncher.addEventListener('click', openChat);
   panel.querySelector('.portfolio-chat-close').addEventListener('click', closeChat);
   panel.querySelector('#portfolio-chat-form').addEventListener('submit', function (event) {
     event.preventDefault();
