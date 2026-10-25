@@ -38,6 +38,8 @@ $('.tz-chips').innerHTML=CHIPS.map(c=>`<button type="button">${c}</button>`).joi
 $('.tz-chips').onclick=e=>{if(e.target.tagName==='BUTTON')ask(e.target.textContent)};
 $('.tz-form').onsubmit=e=>{e.preventDefault();ask(inp.value);inp.value=''};
 const toggle=o=>{box.classList.toggle('open',o);fab.setAttribute('aria-expanded',o);fab.textContent=o?'✕':'💬';if(o){if(!log.children.length)add("Hi! 👋 I'm Tabish's assistant. Ask me about his skills, projects, experience, education or contact details.",'tz-b');setTimeout(()=>inp.focus(),300)}else fab.focus()};
+const heroButton=document.getElementById('portfolio-chat-hero-open');
+if(heroButton)heroButton.addEventListener('click',()=>toggle(true));
 fab.onclick=()=>toggle(!box.classList.contains('open'));$('.tz-head button').onclick=()=>toggle(false);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&box.classList.contains('open'))toggle(false)});
 })();

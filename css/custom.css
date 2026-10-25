@@ -10,6 +10,11 @@
 }
 .cover-v1#home-section .heading { font-size: 4.5rem; }
 .cover-v1#home-section .subheading { font-size: 22px; line-height: 1.6; color: #cfd6e4; font-weight: 400; }
+.portfolio-chat-hero-wrap { display: flex; justify-content: center; margin-top: 20px; }
+.portfolio-chat-hero { display: inline-flex; align-items: center; gap: 12px; padding: 13px 20px; border: 1px solid #e64b5c; border-radius: 999px; background: #d63447; color: #fff; font: inherit; font-size: 15px; font-weight: 600; box-shadow: 0 8px 24px rgba(214,52,71,.25); cursor: pointer; transition: background .2s, transform .2s; }
+.portfolio-chat-hero:hover { background: #b92235; color: #fff; transform: translateY(-2px); }
+.portfolio-chat-hero span { font-size: 19px; line-height: 1; }
+.portfolio-chat-hero:focus-visible { outline: 3px solid #f7c948; outline-offset: 4px; }
 @media (max-width: 991.98px) {
   .cover-v1#home-section {
     background-position: center bottom 60px;
@@ -18,6 +23,8 @@
   .cover-v1#home-section .container > .row { align-items: flex-start !important; padding-top: 120px; }
   .cover-v1#home-section .heading { font-size: 2.6rem; }
   .cover-v1#home-section .subheading { font-size: 16px; }
+  .portfolio-chat-hero-wrap { margin-top: 16px; }
+  .portfolio-chat-hero { padding: 11px 16px; font-size: 14px; }
 }
 
 /* --- Nav: black bar when scrolling --- */
